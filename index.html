@@ -3,161 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jasper Dev | Backend Specialist</title>
+  <title>Jasper Dev | Python Backend Specialist</title>
   <style>
-    * {
-      box-sizing: border-box;
-      transition: all 0.25s ease-in-out;
-    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
       margin: 0;
-      padding: 0;
-      background: #f4f6f8;
-      color: #1f2937;
-      line-height: 1.7;
-    }
-    .container {
-      max-width: 900px;
+      padding: 2rem;
+      max-width: 800px;
       margin: auto;
-      padding: 2.5rem 1.5rem;
     }
+
     h1 {
-      font-size: 2.8rem;
-      color: #111827;
+      font-size: 2.5rem;
+      color: #222;
       margin-bottom: 0.2rem;
     }
-    h2 {
-      font-size: 1.8rem;
-      margin-top: 2.5rem;
-      margin-bottom: 0.8rem;
-      color: #1e40af;
-      border-left: 5px solid #2563eb;
-      padding-left: 0.6rem;
+
+    h2, h3 {
+      color: #444;
     }
-    h3 {
-      color: #2563eb;
-      margin-bottom: 0.4rem;
+
+    p {
+      color: #333;
+      line-height: 1.6;
     }
-    p, li {
-      font-size: 1.05rem;
-      color: #374151;
-    }
+
     a {
-      color: #2563eb;
+      color: #007bff;
       text-decoration: none;
-      font-weight: bold;
     }
+
     a:hover {
       text-decoration: underline;
-      color: #1d4ed8;
     }
+
     .project {
-      background: #ffffff;
-      padding: 1.3rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-bottom: 1.8rem;
+      background-color: white;
+      border-left: 5px solid #007bff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-    .project:hover {
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-      transform: scale(1.01);
-    }
+
     ul {
       padding-left: 1.2rem;
-      margin-top: 0.5rem;
     }
-    .contact a {
-      display: block;
-      margin: 0.4rem 0;
-    }
+
     footer {
-      margin-top: 3rem;
-      text-align: center;
-      color: #9ca3af;
+      margin-top: 2rem;
       font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.2rem;
-      }
-      h2 {
-        font-size: 1.4rem;
-      }
-      .container {
-        padding: 1.5rem;
-      }
+      color: #888;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Jasper Dev</h1>
-    <p><strong>Backend Developer (Python)</strong> — Login Systems • APIs • Dashboards • Automation</p>
+  <h1>Jasper Dev</h1>
+  <p><strong>Backend Python Specialist</strong> — I build login systems, APIs, dashboards, automation tools, and deploy them using Flask + Termux + PythonAnywhere.</p>
 
-    <h2>👋 About Me</h2>
-    <p>
-      I specialize in backend systems built using Python — including login flows, dashboards, inventory tools, and automated systems.  
-      Everything I build is fast, secure, and deployable — whether from a mobile phone (Termux) or full-scale servers.
-    </p>
+  <hr>
 
-    <h2>🛠️ Projects</h2>
+  <h2>🛠️ Projects</h2>
 
-    <div class="project">
-      <h3>📝 Task Manager</h3>
-      <p>A personal productivity tool built with user login, task tracking, and secure JSON file storage.</p>
-      <ul>
-        <li>✔️ Login system with file-based user auth</li>
-        <li>✔️ Create, edit, delete tasks</li>
-        <li>✔️ Local file storage via JSON</li>
-      </ul>
-      <a href="https://github.com/backend-jasper/task-manager" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>📦 Inventory Manager</h3>
-      <p>A lightweight inventory tracking system for small businesses — includes admin login and full item control.</p>
-      <ul>
-        <li>✔️ Admin-only access</li>
-        <li>✔️ Add, update, delete products</li>
-        <li>✔️ JSON file as simple database</li>
-      </ul>
-      <a href="https://github.com/backend-jasper/inventory-manager" target="_blank">🔗 View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>🧮 Admin Dashboard</h3>
-<p>A public Flask-based admin system with login, dashboard, product management, and full web UI. Built from scratch using only Python and HTML/CSS. Deployed live via PythonAnywhere.</p>
-<ul>
-  <li>✅ Admin login with demo account</li>
-  <li>✅ Add/delete products</li>
-  <li>✅ Web-based dashboard interface</li>
-  <li>✅ Fully mobile-friendly</li>
-</ul>
-<a href="https://github.com/backend-jasper/admin-dashboard" target="_blank">🔗 View on GitHub</a><br />
-<a href="https://backendjasper.pythonanywhere.com" target="_blank">🌐 Live Demo</a>
-
-    <h2>⚙️ Skills</h2>
+  <div class="project">
+    <h3>📝 Task Manager</h3>
+    <p>A backend system for managing tasks. Users can register, log in, add tasks, and mark them done. Built with file-based storage for speed and portability.</p>
     <ul>
-      <li>💻 Python: Flask, File Handling, JSON</li>
-      <li>🌐 HTML + CSS (Clean, Responsive)</li>
-      <li>🔐 Login & Authentication Systems</li>
-      <li>📱 Android Development via Termux</li>
-      <li>🔧 Git & GitHub (CLI Workflow)</li>
+      <li>✅ Login & Register system</li>
+      <li>✅ Task add/delete/complete</li>
+      <li>✅ Stored in JSON files</li>
     </ul>
-
-    <h2>📞 Contact</h2>
-    <div class="contact">
-      <a href="mailto:jasperbackend@gmail.com">📧 jasperbackend@gmail.com</a>
-      <a href="https://www.facebook.com/share/1AU25qmCPt/" target="_blank">📘 facebook.com/JasperDev</a>
-      <a href="https://www.linkedin.com/in/jasper-dev-9a9a78373" target="_blank">💼 linkedin.com/in/jasper-dev</a>
-    </div>
-
-    <footer>
-      © 2025 Jasper Dev — Built on mobile using Python + Termux.
-    </footer>
+    <a href="https://github.com/backend-jasper/task-manager" target="_blank">🔗 GitHub Repo</a>
   </div>
+
+  <div class="project">
+    <h3>📦 Inventory Manager</h3>
+    <p>Lightweight inventory system for small business owners to track product stock, category, and quantity. Pure Python — no external database needed.</p>
+    <ul>
+      <li>✅ Admin login with JSON database</li>
+      <li>✅ Product add/edit/delete</li>
+      <li>✅ Designed for mobile terminal use (Termux)</li>
+    </ul>
+    <a href="https://github.com/backend-jasper/inventory-manager" target="_blank">🔗 GitHub Repo</a>
+  </div>
+
+  <div class="project">
+    <h3>🧮 Admin Dashboard</h3>
+    <p>Fully deployed Flask dashboard with admin login, product manager, and web interface. Live demo available online.</p>
+    <ul>
+      <li>✅ Admin login (demo: <code>admin</code> / <code>admin123</code>)</li>
+      <li>✅ Add/delete products from UI</li>
+      <li>✅ Mobile-responsive interface</li>
+      <li>✅ Deployed with PythonAnywhere</li>
+    </ul>
+    <a href="https://github.com/backend-jasper/admin-dashboard" target="_blank">🔗 GitHub Repo</a> |
+    <a href="https://backendjasper.pythonanywhere.com" target="_blank">🌐 Live Demo</a>
+  </div>
+
+  <hr>
+
+  <h2>📬 Contact</h2>
+  <p>Email: <a href="mailto:jasperbackend@gmail.com">jasperbackend@gmail.com</a></p>
+  <p>Facebook: <a href="https://www.facebook.com/share/1AU25qmCPt/" target="_blank">facebook.com/JasperDev</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/jasper-dev-9a9a78373" target="_blank">linkedin.com/in/jasper-dev</a></p>
+
+  <footer>
+    &copy; 2025 Jasper Dev – Backend Systems Powered by Python + Flask + Termux
+  </footer>
 
 </body>
 </html>
