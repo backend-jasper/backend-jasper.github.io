@@ -4,49 +4,94 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jasper Dev | Backend Specialist</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      color: #777;
+      margin-bottom: 2rem;
+    }
+    .project, .contact {
+      background: white;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+    .project h2, .contact h2 {
+      margin-top: 0;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; max-width: 800px; margin: auto; padding: 2rem; background: #f9f9f9;">
+<body>
+  <div class="container">
+    <h1>Jasper Dev</h1>
+    <p class="tagline">Python Backend Developer | APIs · Login Systems · Automations</p>
 
-  <h1 style="font-size: 2.5rem; margin-bottom: 0.2rem;">Jasper Dev</h1>
-  <p style="font-size: 1.2rem; color: #555;">Python Backend Developer | APIs, Login Systems, Automations</p>
+    <div class="project">
+      <h2>👋 About Me</h2>
+      <p>
+        I specialize in backend systems using Python — like login flows, task dashboards, inventory systems, and automations.
+        I build fast, bug-free, clean backend systems. Deployable on phones (Termux), laptops, or cloud.
+      </p>
+    </div>
 
-  <hr />
+    <div class="project">
+      <h2>📝 Task Manager</h2>
+      <p>A backend task management system with login, add/edit/delete tasks, and file-based JSON database.</p>
+      <a href="https://github.com/backend-jasper/task-manager" target="_blank">🔗 View on GitHub</a>
+    </div>
 
-  <h2>👋 About Me</h2>
-  <p>
-    I specialize in building backend systems using Python — including login flows, task dashboards, inventory systems, and API services.
-    All my work is built clean, fast, and bug-free. I can deploy on phones (Termux), laptops, and production servers.
-  </p>
+    <div class="project">
+      <h2>📦 Inventory Manager</h2>
+      <p>A backend inventory system with admin login, product control, and persistent storage.</p>
+      <ul>
+        <li>✅ Admin login system</li>
+        <li>✅ Add, edit, delete products</li>
+        <li>✅ JSON file database</li>
+        <li>✅ Built for small business use</li>
+      </ul>
+      <a href="https://github.com/backend-jasper/inventory-manager" target="_blank">🔗 View on GitHub</a>
+    </div>
 
-  <hr />
+    <div class="contact">
+      <h2>📞 Contact</h2>
+      <p>Email: <a href="mailto:jasperbackend@gmail.com">jasperbackend@gmail.com</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/share/1AU25qmCPt/" target="_blank">facebook.com/JasperDev</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jasper-dev-9a9a78373" target="_blank">linkedin.com/in/jasper-dev</a></p>
+    </div>
 
-  <h2>🛠️ Projects</h2>
-
-  <h3>📝 Task Manager</h3>
-  <p>A Python-based task management system with login, add/edit/delete tasks, and file-based JSON storage.</p>
-  <a href="https://github.com/backend-jasper/task-manager" target="_blank">🔗 View on GitHub</a>
-
-  <br /><br />
-
-  <h3>📦 Inventory Manager</h3>
-  <p>A backend inventory tracking system with admin login, product CRUD, and persistent storage in JSON.</p>
-  <ul>
-    <li>✅ Admin login system</li>
-    <li>✅ Add, edit, delete products</li>
-    <li>✅ JSON file database</li>
-    <li>✅ Built for small businesses</li>
-  </ul>
-  <a href="https://github.com/backend-jasper/inventory-manager" target="_blank">🔗 View on GitHub</a>
-
-  <hr />
-
-  <h2>📞 Contact</h2>
-  <p>Email: <a href="mailto:jasperbackend@gmail.com">jasperbackend@gmail.com</a></p>
-  <p>Facebook: <a href="https://www.facebook.com/share/1AU25qmCPt/" target="_blank">facebook.com/JasperDev</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/jasper-dev-9a9a78373" target="_blank">linkedin.com/in/jasper-dev</a></p>
-
-  <hr />
-  <p style="text-align: center; color: #aaa;">© 2025 Jasper Dev. Built with 💻 and Termux.</p>
-
+    <footer>
+      © 2025 Jasper Dev · Built with 💻 Termux + Python
+    </footer>
+  </div>
 </body>
 </html>
