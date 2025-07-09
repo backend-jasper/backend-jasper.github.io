@@ -7,50 +7,61 @@
   <style>
     * {
       box-sizing: border-box;
+      transition: all 0.25s ease-in-out;
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f6f8;
-      color: #333;
+      background: #f4f6f8;
+      color: #1f2937;
+      line-height: 1.7;
     }
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 2rem;
+      padding: 2.5rem 1.5rem;
     }
     h1 {
       font-size: 2.8rem;
-      margin-bottom: 0.3rem;
-      color: #0a192f;
+      color: #111827;
+      margin-bottom: 0.2rem;
     }
     h2 {
       font-size: 1.8rem;
       margin-top: 2.5rem;
-      color: #112240;
+      margin-bottom: 0.8rem;
+      color: #1e40af;
+      border-left: 5px solid #2563eb;
+      padding-left: 0.6rem;
     }
     h3 {
-      margin-bottom: 0.3rem;
-      color: #007bff;
+      color: #2563eb;
+      margin-bottom: 0.4rem;
     }
     p, li {
       font-size: 1.05rem;
-      line-height: 1.6;
+      color: #374151;
     }
     a {
-      color: #007bff;
+      color: #2563eb;
       text-decoration: none;
+      font-weight: bold;
     }
     a:hover {
       text-decoration: underline;
+      color: #1d4ed8;
     }
     .project {
-      background-color: #ffffff;
-      padding: 1.2rem;
+      background: #ffffff;
+      padding: 1.3rem;
       border-radius: 10px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       margin-bottom: 1.8rem;
+    }
+    .project:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      transform: scale(1.01);
     }
     ul {
       padding-left: 1.2rem;
@@ -58,23 +69,23 @@
     }
     .contact a {
       display: block;
-      margin: 0.3rem 0;
+      margin: 0.4rem 0;
     }
     footer {
       margin-top: 3rem;
       text-align: center;
-      color: #888;
+      color: #9ca3af;
       font-size: 0.9rem;
     }
     @media (max-width: 600px) {
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
       h2 {
         font-size: 1.4rem;
       }
       .container {
-        padding: 1.2rem;
+        padding: 1.5rem;
       }
     }
   </style>
@@ -83,56 +94,56 @@
 
   <div class="container">
     <h1>Jasper Dev</h1>
-    <p><strong>Python Backend Developer</strong> | Login Systems • APIs • Dashboards • Automation</p>
+    <p><strong>Backend Developer (Python)</strong> — Login Systems • APIs • Dashboards • Automation</p>
 
     <h2>👋 About Me</h2>
     <p>
-      I build clean, fast, and bug-free backend systems with Python — including login flows, admin dashboards, inventory management tools, and API services.  
-      All my work is fully functional on Android (Termux) and deployable on servers or local machines.
+      I specialize in backend systems built using Python — including login flows, dashboards, inventory tools, and automated systems.  
+      Everything I build is fast, secure, and deployable — whether from a mobile phone (Termux) or full-scale servers.
     </p>
 
     <h2>🛠️ Projects</h2>
 
     <div class="project">
       <h3>📝 Task Manager</h3>
-      <p>A command-line task system with login, task creation, editing, and deletion — all stored in local JSON.</p>
+      <p>A personal productivity tool built with user login, task tracking, and secure JSON file storage.</p>
       <ul>
-        <li>✔️ Secure login system</li>
-        <li>✔️ JSON-based task tracking</li>
-        <li>✔️ Terminal-friendly design</li>
+        <li>✔️ Login system with file-based user auth</li>
+        <li>✔️ Create, edit, delete tasks</li>
+        <li>✔️ Local file storage via JSON</li>
       </ul>
       <a href="https://github.com/backend-jasper/task-manager" target="_blank">🔗 View on GitHub</a>
     </div>
 
     <div class="project">
       <h3>📦 Inventory Manager</h3>
-      <p>Python app for managing business inventory — built with file-based database, admin-only access, and item control features.</p>
+      <p>A lightweight inventory tracking system for small businesses — includes admin login and full item control.</p>
       <ul>
-        <li>✔️ Admin login authentication</li>
-        <li>✔️ Product add/edit/delete</li>
-        <li>✔️ JSON data persistence</li>
+        <li>✔️ Admin-only access</li>
+        <li>✔️ Add, update, delete products</li>
+        <li>✔️ JSON file as simple database</li>
       </ul>
       <a href="https://github.com/backend-jasper/inventory-manager" target="_blank">🔗 View on GitHub</a>
     </div>
 
     <div class="project">
       <h3>📊 Admin Dashboard (Flask)</h3>
-      <p>Mobile-responsive web dashboard built with Flask — login system, product manager UI, and navigation.</p>
+      <p>A web dashboard app with Flask — includes login flow, product interface, and mobile-friendly layout.</p>
       <ul>
-        <li>✔️ Flask routes + Jinja templates</li>
-        <li>✔️ Login interface with hints (try: admin / admin123)</li>
-        <li>✔️ Clean, responsive UI with delete buttons and navigation</li>
+        <li>✔️ Responsive login (username: admin, password: admin123)</li>
+        <li>✔️ Flask backend + Jinja templates</li>
+        <li>✔️ Navigation + delete feature</li>
       </ul>
       <a href="https://github.com/backend-jasper/admin-dashboard" target="_blank">🔗 View on GitHub</a>
     </div>
 
     <h2>⚙️ Skills</h2>
     <ul>
-      <li>💻 Python (Flask, JSON, File Handling)</li>
-      <li>🌐 Web Dev: HTML + CSS (Responsive)</li>
-      <li>🔐 Login/Auth Systems</li>
-      <li>📱 Android Dev using Termux</li>
-      <li>📂 Git & GitHub CLI</li>
+      <li>💻 Python: Flask, File Handling, JSON</li>
+      <li>🌐 HTML + CSS (Clean, Responsive)</li>
+      <li>🔐 Login & Authentication Systems</li>
+      <li>📱 Android Development via Termux</li>
+      <li>🔧 Git & GitHub (CLI Workflow)</li>
     </ul>
 
     <h2>📞 Contact</h2>
@@ -143,7 +154,7 @@
     </div>
 
     <footer>
-      © 2025 Jasper Dev. Built with 💻 using Python + Termux.
+      © 2025 Jasper Dev — Built on mobile using Python + Termux.
     </footer>
   </div>
 
